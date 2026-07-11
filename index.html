@@ -69,16 +69,42 @@
             <h2>Initialize Development Pipeline</h2>
             <p>Submit your product specification rules below to request a digital asset build.</p>
 
-            <form id="client-form" onsubmit="launchProjectRequest(event)">
-                <div class="console-group">
-                    <label for="client-email">Client Contact Email</label>
-                    <input type="email" id="client-email" placeholder="name@company.co.tz" required>
+            <!-- Real-World Enterprise Contract Influx Processing Form -->
+            <form id="contact-matrix-form" action="https://formspree.io/f/xrenzpwg" method="POST">
+                <div class="matrix-form-group">
+                    <label for="client-name">Enterprise Representative Name</label>
+                    <input type="text" id="client-name" name="Client_Representative" placeholder="E.g., Nassor Al-Harthy" required>
                 </div>
-                <div class="console-group">
-                    <label for="project-desc">System Requirements / Business Scope</label>
-                    <textarea id="project-desc" rows="4" placeholder="Describe the layout parameters, targets, or inventory bottlenecks you need solved..." required></textarea>
+
+                <div class="matrix-form-group">
+                    <label for="client-email">Secure Communication Node (Email)</label>
+                    <input type="email" id="client-email" name="Client_Email_Node" placeholder="name@company.com" required>
                 </div>
-                <button type="submit" class="launch-btn">LAUNCH DIGITAL SYSTEM CONTRACT</button>
+
+                <div class="matrix-split-grid">
+                    <div class="matrix-form-group">
+                        <label for="project-vector">Project Allocation Vector</label>
+                        <select id="project-vector" name="Project_Target_Vector" required>
+                            <option value="">-- Select Project Tier --</option>
+                            <option value="Static Landing Matrix">Static Landing Matrix (250K+ TZS)</option>
+                            <option value="Dynamic Inventory Dashboard">Dynamic Inventory Dashboard (500K+ TZS)</option>
+                            <option value="Cross-Border Localization Engine">Cross-Border Localization Engine (1M+ TZS)</option>
+                        </select>
+                    </div>
+
+                    <div class="matrix-form-group">
+                        <label for="project-budget">Allocated Budget Cap (TZS)</label>
+                        <input type="text" id="project-budget" name="Declared_Budget_Cap" placeholder="E.g., 600,000" required>
+                    </div>
+                </div>
+
+                <div class="matrix-form-group">
+                    <label for="project-brief">Technical Brief & Functional Bounds</label>
+                    <textarea id="project-brief" name="Technical_Project_Brief" rows="5" placeholder="Outline your system boundaries, asset targets, and timeline constraints here..." required></textarea>
+                </div>
+
+                <!-- Clean, Isolated Button Control Without Messy Inline Styles -->
+                <button type="submit" class="submit-matrix-btn">STREAM ENTERPRISE BRIEF TO PORTFOLIO COMMAND</button>
             </form>
 
             <div id="console-output" class="output-hidden"></div>
@@ -89,6 +115,6 @@
         <p>ENGINEER//DEVELY &copy; 2026. Code is Sovereignty. Designed to lift our families and our nation.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
 </body>
 </html>

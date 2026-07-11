@@ -308,3 +308,65 @@ body {
     .intro-core h1 { font-size: 2.2rem; }
     .console-box { padding: 30px; }
 }
+
+/* ==========================================================================
+   AGENCY HUB INFLUX PORTAL VISUAL BINDINGS DIRECT HIGH-PRIORITY PATCH V3
+   ========================================================================== */
+#contact-matrix-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+#contact-matrix-form input,
+#contact-matrix-form select,
+#contact-matrix-form textarea {
+    width: 100% !important;
+    background: #070a0f !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    padding: 14px 18px !important;
+    border-radius: 8px !important;
+    color: var(--pure-white) !important;
+    font-family: var(--font-stack) !important;
+    font-size: 1rem !important;
+    transition: all 0.3s ease !important;
+}
+
+#contact-matrix-form textarea {
+    resize: none !important; /* Corner lock remains active */
+}
+
+#contact-matrix-form input:focus,
+#contact-matrix-form select:focus,
+#contact-matrix-form textarea:focus {
+    outline: none !important;
+    border-color: var(--neon-green) !important;
+    background: #0c111a !important;
+    box-shadow: 0 0 15px rgba(0, 255, 102, 0.15) !important;
+}
+
+/* Elite, high-contrast button styling with fluid hardware acceleration */
+#contact-matrix-form .submit-matrix-btn {
+    width: 100% !important;
+    background-color: var(--neon-green) !important;
+    color: #040608 !important; /* Dark text for clean legibility */
+    border: 1px solid transparent !important;
+    padding: 18px !important;
+    font-size: 1rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 1px !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+    box-shadow: 0 4px 20px rgba(0, 255, 102, 0.3) !important;
+    
+    /* THE FIX: Explicitly tells the browser to animate colors smoothly over 0.4 seconds */
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease !important;
+}
+
+#contact-matrix-form .submit-matrix-btn:hover {
+    background-color: #020305 !important; /* Eases into dark background */
+    color: var(--neon-green) !important; /* Eases text into neon green */
+    border-color: var(--neon-green) !important; /* Eases border into neon green */
+    box-shadow: 0 6px 25px rgba(0, 255, 102, 0.6) !important;
+}
